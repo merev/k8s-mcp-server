@@ -3,12 +3,12 @@ entries:
   k8s-mcp-server:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-10-26T20:08:20.929357+02:00"
+    created: "2025-10-26T20:46:16.768614+02:00"
     description: MCP Server for Kubernetes clusters
-    digest: b6e0344689a4890c69fea0ce00a2279954e1459e353b3ca94b37c63212b9e6ee
+    digest: eaa3fba6c9844cf63653e16b57aecdc9ac658405d9aaf0bac14cace635bdc417
     name: k8s-mcp-server
     type: application
     urls:
     - https://merev.github.io/k8s-mcp-server/k8s-mcp-server-0.1.0.tgz
     version: 0.1.0
-generated: "2025-10-26T20:08:20.927896+02:00"
+generated: "2025-10-26T20:46:16.768154+02:00"
