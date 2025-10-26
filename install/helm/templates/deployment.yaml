@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-mcp-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-mcp-server
+  template:
+    metadata:
+      labels:
+        app: k8s-mcp-server
+    spec:
+      serviceAccountName: k8s-mcp-server
+      containers:
+        - name: k8s-mcp-server
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: 8080
+          env:
+            - name: MCP_SERVER_PORT
+              value: "8080"
+            - name: MCP_MODE
+              value: "cluster"
+            - name: LOG_LEVEL
+              value: "info"
+          resources: {{- toYaml .Values.resources | nindent 12 }}
