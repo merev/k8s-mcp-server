@@ -1,7 +1,7 @@
 server:
   transport: sse
   host: 0.0.0.0
-  post: 8080
+  port: 8080
 
 image:
   repository: ghcr.io/merev/k8s-mcp-server
