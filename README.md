@@ -1,7 +1,5 @@
 # mcp-kubernetes-server
 
-[![PyPI version](https://img.shields.io/pypi/v/mcp-kubernetes-server.svg)](https://pypi.org/project/mcp-kubernetes-server) [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE) [![Build Status](https://github.com/feiskyer/mcp-kubernetes-server/actions/workflows/build.yml/badge.svg)](https://github.com/feiskyer/mcp-kubernetes-server/actions/workflows/build.yml)
-
 The `mcp-kubernetes-server` is a server implementing the Model Context Protocol (MCP) to enable AI assistants (such as Claude, Cursor, and GitHub Copilot) to interact with Kubernetes clusters. It acts as a bridge, translating natural language requests from these assistants into Kubernetes operations and returning the results.
 
 It allows AI assistants to:
